@@ -1,0 +1,26 @@
+set dotenv-load := true
+
+help:
+    #!/usr/bin/env bash
+    just --list
+
+_default:
+    @just help
+
+lint:
+    black .
+    isort .
+
+clean:
+    conda remove --name splats-dev --all
+    conda remove --name splats --all
+
+install:
+    if [ "$ENV" = "dev" ]; then
+      conda env create -f environment-dev.yml
+    else
+      conda env create -f environment.yml
+    fi
+
+build-colmap:
+    docker build -f Dockerfile.colmap -t="colmap:latest" --build-arg CUDA_ARCHITECTURES=89 .

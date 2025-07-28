@@ -1,0 +1,15 @@
+name: splats-dev
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - fastapi
+  - opencv
+  - open3d
+  - aiofiles
+  # dev dependencies
+  - isort
+  - pytest
+  - just
+  - black
+  - vim
