@@ -1,0 +1,3 @@
+- build the docker container by running: `sudo docker build -f Dockerfile -t ark-node:latest ..`
+- run the docker container on the server by running: `sudo docker run --rm --network host -p 8090:8090 -e SPLAT_STORAGE_DIR=/data/outside -v ~/splat_storage:/data/outside ark-node:latest`
+- run the docker container locally by running: `docker run --rm -p 8090:8090 -e SPLAT_STORAGE_DIR=/data/outside -v ~/splat_storage:/data/outside -e HOST=0.0.0.0 ark-node:latest`

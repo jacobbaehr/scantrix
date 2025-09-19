@@ -1,0 +1,31 @@
+# dependencies
+/node_modules/
+
+# build output
+/dist/
+/frontend_dist/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+logs/
+*.log
+
+# environment variables
+.env
+.env.local
+.env.*.local
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE/editor folders
+.vscode/
+.idea/
+
+# Docker
+docker-compose.override.yml
+
+# optionally ignore coverage reports
+coverage/

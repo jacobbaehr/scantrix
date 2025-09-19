@@ -1,0 +1,19 @@
+{
+  "name": "ark-node",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@mkkellogg/gaussian-splats-3d": "^0.4.7",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "three": "^0.160.0"
+  }
+}
